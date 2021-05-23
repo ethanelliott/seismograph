@@ -1,0 +1,6 @@
+{
+  "inputFiles": ["./src"],
+  "out": "./dist/public/docs",
+  "json": "./dist/public/docs/reflect.json",
+  "mode": "file"
+}

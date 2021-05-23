@@ -1,0 +1,152 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "jsRules": {
+    "no-unused-expression": true
+  },
+  "rules": {
+    "arrow-parens": [
+      true,
+      "ban-single-arg-parens"
+    ],
+    "array-type": [
+      true,
+      "generic"
+    ],
+    "arrow-return-shorthand": true,
+    "await-promise": true,
+    "binary-expression-operand-order": true,
+    "class-name": true,
+    "completed-docs": [
+      false,
+      "classes",
+      "enums",
+      "interfaces",
+      "types"
+    ],
+    "curly": true,
+    "cyclomatic-complexity": [
+      true,
+      7
+    ],
+    "deprecation": {
+      "severity": "warning"
+    },
+    "encoding": true,
+    "file-header": [
+      true,
+      "Copyright \\d{4} Ethan Elliott",
+      "Copyright 2021 Ethan Elliott"
+    ],
+    "file-name-casing": [
+      true,
+      "kebab-case"
+    ],
+    "import-spacing": true,
+    "indent": {
+      "options": [
+        "spaces"
+      ]
+    },
+    "interface-name": [
+      true,
+      "never-prefix"
+    ],
+    "interface-over-type-literal": true,
+    "max-classes-per-file": false,
+    "max-line-length": [
+      true,
+      140
+    ],
+    "member-access": [
+      true,
+      "no-public"
+    ],
+    "member-ordering": false,
+    "no-default-export": true,
+    "no-default-import": true,
+    "no-empty": true,
+    "no-empty-interface": true,
+    "no-inferrable-types": [
+      true,
+      "ignore-params"
+    ],
+    "no-misused-new": true,
+    "no-require-imports": true,
+    "no-var-requires": false,
+    "no-var-keyword": true,
+    "object-literal-key-quotes": [
+      true,
+      "as-needed"
+    ],
+    "object-literal-sort-keys": false,
+    "one-variable-per-declaration": [
+      true,
+      "ignore-for-loop"
+    ],
+    "only-arrow-functions": true,
+    "ordered-imports": true,
+    "prefer-const": true,
+    "prefer-readonly": true,
+    "prefer-template": true,
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "semicolon": {
+      "options": [
+        "always"
+      ]
+    },
+    "space-before-function-paren": [
+      true,
+      {
+        "anonymous": "never",
+        "asyncArrow": "always",
+        "constructor": "never",
+        "method": "never",
+        "named": "never"
+      }
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "always",
+        "singleline": "never"
+      }
+    ],
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      },
+      {
+        "call-signature": "onespace",
+        "index-signature": "onespace",
+        "parameter": "onespace",
+        "property-declaration": "onespace",
+        "variable-declaration": "onespace"
+      }
+    ],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-module",
+      "check-separator",
+      "check-rest-spread",
+      "check-type",
+      "check-typecast",
+      "check-type-operator",
+      "check-preblock"
+    ]
+  },
+  "rulesDirectory": []
+}
