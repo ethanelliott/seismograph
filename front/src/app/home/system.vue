@@ -23,21 +23,21 @@
                 <v-row>
                   <v-col cols="3">
                     <v-sheet class="pa-5">
-                      <span class="display-1">{{ (application.uptime * 100).toFixed(2) }}%</span>
+                      <span class="display-1">{{ (application.uptimeLast24Hours * 100).toFixed(2) }}%</span>
                       <p class="body-1">Last 24 hours</p>
                     </v-sheet>
                   </v-col>
                   <v-divider></v-divider>
                   <v-col cols="3">
                     <v-sheet class="pa-5">
-                      <span class="display-1">{{ (application.uptime * 100).toFixed(2) }}%</span>
+                      <span class="display-1">{{ (application.uptimeLast7Days * 100).toFixed(2) }}%</span>
                       <p class="body-1">Last 7 days</p>
                     </v-sheet>
                   </v-col>
                   <v-divider></v-divider>
                   <v-col cols="3">
                     <v-sheet class="pa-5">
-                      <span class="display-1">{{ (application.uptime * 100).toFixed(2) }}%</span>
+                      <span class="display-1">{{ (application.uptimeAllTime * 100).toFixed(2) }}%</span>
                       <p class="body-1">Total Uptime</p>
                     </v-sheet>
                   </v-col>
@@ -105,8 +105,8 @@ export default {
       }))
     },
     uptimeChartData() {
-      return this.application.results.map(e => ({
-        value: e.status === 'SUCCESS' ? 1 : 0,
+      return [...this.application.uptime].reverse().map(e => ({
+        value: e.uptime,
         label: moment.utc(e.timestamp).local().format()
       }))
     }

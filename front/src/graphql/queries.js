@@ -7,7 +7,6 @@ export const APPLICATIONS = gql`
             url
             icon
             name
-            uptime
             recentResult {
                 id
                 status
@@ -31,7 +30,13 @@ export const APPLICATION = gql`
             name
             icon
             url
-            uptime
+            uptime {
+                timestamp
+                uptime
+            }
+            uptimeAllTime
+            uptimeLast24Hours
+            uptimeLast7Days
             recentResult {
                 id
                 status

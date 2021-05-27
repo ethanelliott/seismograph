@@ -21,7 +21,7 @@ export class ResultsController {
 
     @Get('/error')
     async throwError(): Promise<number> {
-        // throw new HttpError(404, 'Unable to find the thing!');
+        // throw new HttpError(500, 'SERVER ERROR');
         return 4;
     }
 }
